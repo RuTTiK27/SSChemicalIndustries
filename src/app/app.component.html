@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">{{title}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,13 @@
       </ul>
 
       <form class="d-flex" role="search">
-        <button class="btn btn-outline-secondary rounded-pill" type="submit">Login</button>
+        <button class="btn btn-outline-dark rounded-pill" type="submit">Login <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+  <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1" />
+  <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z" />
+</svg></button>
+        <button class="btn btn-outline-dark rounded-pill ms-2" type="submit">Register <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+</svg></button>
       </form>
     </div>
   </div>
@@ -39,8 +45,9 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
+
         <div class="carousel-item active">
-          <div style="width: 100%; margin: 0 auto; max-height: 600px; display: flex; justify-content: center; align-items: center; position: relative;">
+          <div style="width: 100%; margin: 0 auto; max-height: 700px; display: flex; justify-content: center; align-items: center; position: relative;">
             <!-- Dark overlay -->
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
 
@@ -56,27 +63,42 @@
           </div>
         </div>
 
+        <div class="carousel-item ">
+          <div style="width: 100%; margin: 0 auto; max-height: 700px; display: flex; justify-content: center; align-items: center; position: relative;">
+            <!-- Dark overlay -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
 
+            <!-- Image -->
+            <img src="ryan-zazueta--lulun7F32c-unsplash.jpg" class="img-fluid d-block w-100" style="object-fit: cover;" alt="Chemical Factory" />
+          </div>
 
-
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Our Products</h1>
-              <p>High-quality chemicals for various industries.</p>
+          <div class="container" style="position: relative; z-index: 2;">
+            <div class="carousel-caption text-start">
+              <h1>Welcome to SS Chemical Industries</h1>
+              <p class="opacity-75">Leading the industry with innovation and sustainability.</p>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-          <div class="container">
-            <div class="carousel-caption text-end">
+
+        <div class="carousel-item ">
+          <div style="width: 100%; margin: 0 auto; max-height: 700px; display: flex; justify-content: center; align-items: center; position: relative;">
+            <!-- Dark overlay -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+            <!-- Image -->
+            <img src="6316.jpg" class="img-fluid d-block w-100" style="object-fit: cover;" alt="Chemical Factory" />
+          </div>
+
+          <div class="container" style="position: relative; z-index: 2;">
+            <div class="carousel-caption text-start">
               <h1>Join Our Team</h1>
               <p>Be part of a company that values growth and innovation.</p>
             </div>
           </div>
         </div>
+        
+        
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -96,55 +118,252 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <section id="about">
+        <h3 class="mt-5 ms-3">About Us</h3>
+        <p class="text-muted ms-3">
+          Discover who we are and what we do to lead the chemical industry with excellence.
+        </p>
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>-->
+            <img src="20943892.jpg" class="rounded-circle" width="150" height="150" />
+            <h2 class="fw-normal">Our Mission</h2>
+            <p>To deliver high-quality chemical products that drive innovation and sustainability.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>-->
+            <img src="20616.jpg" class="rounded-circle img-fluid" width="240" height="240" />
+
+            <h2 class="fw-normal">Our Vision</h2>
+            <p>To be a global leader in the chemical industry while fostering environmental care.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>-->
+            <img src="5922662.jpg" class="rounded-circle img-fluid" width="240" height="240" />
+
+            <h2 class="fw-normal">Our Values</h2>
+            <p>Integrity, innovation, and customer focus form the foundation of our operations.</p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </section><!-- /.row -->
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      <section id="products" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="mb-4">Our Products</h2>
+          <p class="text-muted mb-5">
+            Explore our portfolio of high-quality chemical products, catering to various industries.
+          </p>
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img src="sulfuric-acid.jpg" class="card-img-top img-fluid rounded" alt="Sulfuric Acid">
+                <div class="card-body">
+                  <h5 class="card-title">Sulfuric Acid</h5>
+                  <p class="card-text">
+                    Widely used in fertilizers, industrial cleaning, and chemical synthesis.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">
+                    Add to cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img src="sodium-hydroxide.jpg" class="card-img-top img-fluid rounded" alt="Sodium Hydroxide">
+                <div class="card-body">
+                  <h5 class="card-title">Sodium Hydroxide (Caustic Soda)</h5>
+                  <p class="card-text">
+                    Essential for paper manufacturing, detergents, and water treatment processes.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">
+                    Add to cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img src="hydrochloric-acid.jpg" class="card-img-top img-fluid rounded" alt="Hydrochloric Acid">
+                <div class="card-body">
+                  <h5 class="card-title">Hydrochloric Acid</h5>
+                  <p class="card-text">
+                    Used in steel processing, food production, and cleaning agents.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">
+                    Add to cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Product 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img src="fertilizers.jpg" class="card-img-top img-fluid rounded" alt="Fertilizers">
+                <div class="card-body">
+                  <h5 class="card-title">Fertilizers</h5>
+                  <p class="card-text">
+                    High-quality fertilizers to enhance soil health and agricultural yield.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">
+                    Add to cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img src="adhesives.jpg" class="card-img-top img-fluid rounded" alt="Adhesives">
+                <div class="card-body">
+                  <h5 class="card-title">Adhesives</h5>
+                  <p class="card-text">
+                    Reliable adhesives for industrial and consumer applications.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">
+                    Add to cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img src="coatings.png" class="card-img-top img-fluid rounded" alt="Coatings">
+                <div class="card-body">
+                  <h5 class="card-title">Coatings</h5>
+                  <p class="card-text">
+                    Durable coatings for protecting surfaces and enhancing aesthetics.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">
+                    Add to cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </section>
+
+      <section id="services" class="py-5">
+        <div class="container">
+          <h2 class="mb-4 ms-3">Our Services</h2>
+          <p class="text-muted mb-5 ms-3">
+            Providing innovative solutions to meet your chemical industry needs.
+          </p>
+          <div class="row">
+            <!-- Service 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="service-card p-4 shadow-sm">
+                <div class="icon mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                  </svg>
+                </div>
+                <h5 class="service-title mb-2">Custom Chemical Solutions</h5>
+                <p class="text-muted">
+                  We deliver tailored chemical solutions for industries of all sizes.
+                </p>
+              </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="service-card p-4 shadow-sm">
+                <div class="icon mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                  </svg>
+                </div>
+                <h5 class="service-title mb-2">Research & Development</h5>
+                <p class="text-muted">
+                  Our R&D team creates innovative products to address industry challenges.
+                </p>
+              </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="service-card p-4 shadow-sm">
+                <div class="icon mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                  </svg>
+                </div>
+                <h5 class="service-title mb-2">Efficient Logistics</h5>
+                <p class="text-muted">
+                  Ensuring timely delivery of chemical products across the globe.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <hr class="featurette-divider">
+      <section id="contact" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="mb-4">Contact Us</h2>
+          <p class="text-muted mb-5">
+            We’d love to hear from you! Reach out to us for any inquiries or support.
+          </p>
+          <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6 mb-4">
+              <h5>Contact Information</h5>
+              <ul class="list-unstyled">
+                <li><strong>Email:</strong> <a href="mailto:info@sschemicalindustries.com">info&#64;sschemicalindustries.com</a></li>
+                <li><strong>Phone:</strong> +91 9106110090</li>
+                <li><strong>Address:</strong> 1234 Industrial Park, Anand, India</li>
+                <li><strong>Working Hours:</strong> Mon-Fri, 9 AM - 6 PM</li>
+              </ul>
+            </div>
 
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+            <!-- Contact Form -->
+            <div class="col-md-6">
+              <h5>Send Us a Message</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-        </div>
-      </div>
+      </section>
 
-      <hr class="featurette-divider">
 
-      <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->
   </section>
