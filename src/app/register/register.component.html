@@ -1,0 +1,16 @@
+
+<div class="container mt-5">
+  <h2>Register</h2>
+  <div *ngIf="message" class="alert alert-info">{{ message }}</div>
+  <form (submit)="register(); $event.preventDefault()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input [(ngModel)]="email" name="email" type="email" id="email" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input [(ngModel)]="password" name="password" type="password" id="password" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>

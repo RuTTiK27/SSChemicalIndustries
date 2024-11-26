@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <h1>Your Cart</h1>
+  
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+      <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let item of cartItems">
+          <div class="card shadow-sm">
+            <img [src]="item.image" class="card-img-top img-fluid rounded" alt="{{ item.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text">
+                <strong>Price: ${{ item.price.toFixed(2) }}</strong>
+              </p>
+              <button (click)="removeFromCart(item.id)" class="btn btn-danger">
+                Remove from Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mt-4">
+        <h3>Total: ${{ totalPrice.toFixed(2) }}</h3>
+        <button class="btn btn-success" (click)="placeOrder()" >Proceed to Checkout</button>
+      </div>
+    </div>
+  
+    <ng-template #emptyCart>
+      <p>Your cart is empty. Add items to your cart to place an order.</p>
+    </ng-template>
+  </div>
+  
